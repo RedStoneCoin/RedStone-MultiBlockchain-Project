@@ -1,9 +1,9 @@
-﻿# CMakeList.txt : Top-level CMake project file, do global configuration
-# and include sub-projects here.
+﻿# CMakeList.txt : CMake project for redstone.multichain, include source and define
+# project specific logic here.
 #
 cmake_minimum_required (VERSION 3.8)
 
-project ("redstone.multichain")
+# Add source to this project's executable.
+add_executable (redstone.multichain "redstone.multichain.cpp" "redstone.multichain.h")
 
-# Include sub-projects.
-add_subdirectory ("redstone.multichain")
+# TODO: Add tests and install targets if needed.
