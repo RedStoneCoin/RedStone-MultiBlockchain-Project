@@ -7,6 +7,19 @@ Please note this is currently still a thesis and NOT a tested system, if you hav
 
 ![rs](https://miro.medium.com/max/368/1*xP-zfedDLDzPgz6ER2XnAw.jpeg)
 
+## To do
+
+Make a 1st blockchain.
+Test it
+Make a 3rd and 2nd blockchain.
+Test it.
+Combine it.
+
+
+
+
+
+
 # License
 
 ## The MIT License (MIT)
