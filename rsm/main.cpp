@@ -7,7 +7,19 @@
 using std::string;
 using std::cout;
 using std::endl;
+Welcome = "Welcome to redstone client";
+Nodestarting = "Node is starting please wait";
+Error = "Something wrong if this hapen again contact ous on discord red-stone.me";
+Syncing = "Node is syncing please wait!";
+Pnf = "Peers not found";  
+Pf = "Peer Found!"
+int main(){
+    std::cout << "Welcome to redstone client"
+   
+    
 
+
+}
 int main(int argc, char* argv[])
 {
     string input = "grape";
