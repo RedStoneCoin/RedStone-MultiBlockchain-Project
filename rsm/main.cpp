@@ -7,14 +7,14 @@
 using std::string;
 using std::cout;
 using std::endl;
-Welcome = "Welcome to redstone client";
-Nodestarting = "Node is starting please wait";
-Error = "Something wrong if this hapen again contact ous on discord red-stone.me";
-Syncing = "Node is syncing please wait!";
+Welcome = "Welcome to the redstone client";
+Nodestarting = "Your node is starting please wait";
+Error = "Something wrong. if this keeps happening again contact us on discord: red-stone.me";
+Syncing = "Your node is syncing please wait!";
 Pnf = "Peers not found";  
-Pf = "Peer Found!"
+Pf = "Peers Found!"
 int main(){
-    std::cout << "Welcome to redstone client"
+    std::cout << Welcome << endl;
    
     
 
@@ -26,16 +26,21 @@ int main(int argc, char* argv[])
     string output1 = sha256(input);
 
     cout << "sha256('" << input << "'):" << output1 << endl;
-    return 0;
-}
-int count;
+    //return 0;
+    int count;
     while(true)
     {
        Blockchain bChain = Blockchain(); //Loop to mine block every 10 sec loop will coint block that block that counted will be added to the cahin i think
-       block = cout << "Mining block" << endl; bChain.AddBlock(Block(count, "Block Data"));
+       Block block = Block(count, "Block Data");
+       cout << "Mining block" << endl;
+       bChain.AddBlock(block);
        count +=1; 
+        // this does not print every 10 secconds, this prints as fast as it can. You need to implment a non blocking delay (by checking timestamp diffrence and only calling
+        //cout when the diffrence is over 10 secconds)
        cout << block << endl; // print every 10 second 
     }
+    return 0;
+}
 //int main() {
  //   Blockchain bChain = Blockchain();
 
