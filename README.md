@@ -1,4 +1,4 @@
-# RedStone MBP
+# PLEASE GO TO GITHUB.COM/REDSTONECOIN/REDSTONE-POC
 
 ## How it will work?
 How Redstone achives scalablity via a sharded setup.
